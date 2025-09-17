@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.509">
+    <testcase classname="User Registration" name="Successful Registration of the User with Valid Email and Password and Matching Repeat Password" time="0.433">
+        <failure message="Could not create a session: The Safari instance is already paired with another WebDriver session.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBookPro.lan', ip: '2607:fb90:3321:89c9:90a9:935c:283a:a967%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '20.0.2'&#10;Driver info: driver.version: Driver&#10;remote stacktrace: " type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given The user is on "validLink"............................................skipped
+When The user provides a valid email address "validEmail"...................skipped
+And The user provides a valid password "validPassword"......................skipped
+And The User provides a matching repeat password "validRepeatPassword"......skipped
+And The User hits Register button...........................................skipped
+Then The user should be able to register successfully.......................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not create a session: The Safari instance is already paired with another WebDriver session.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBookPro.lan', ip: '2607:fb90:3321:89c9:90a9:935c:283a:a967%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '20.0.2'
+Driver info: driver.version: Driver
+remote stacktrace: 
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:81)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:63)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:41)
+	at utils.Driver.getDriver(Driver.java:36)
+	at steps.Hooks.getToUrl(Hooks.java:17)
+]]></failure>
+    </testcase>
+</testsuite>

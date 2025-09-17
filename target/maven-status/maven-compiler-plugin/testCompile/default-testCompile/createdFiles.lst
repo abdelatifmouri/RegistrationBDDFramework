@@ -1,0 +1,8 @@
+utils/ConfigReader.class
+steps/RegistrationSteps.class
+pages/BasePage.class
+utils/BrowserHelper.class
+runner/RegressionRunner.class
+utils/Driver.class
+steps/Hooks.class
+pages/MainPage.class
